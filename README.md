@@ -22,6 +22,7 @@ This project is more than just a boilerplate – it's a **production-ready found
 ✅ **Security Audits with AuditJS** – Keep your dependencies secure.  
 ✅ **Auto-Generated CHANGELOG** – Track changes effortlessly with auto-changelog.  
 ✅ **Tailwind CSS Integration** – Utilize a utility-first CSS framework to create sleek, responsive designs efficiently.
+https://github.com/nikosanif/angular-authentication
 
 
 ## Quick Start 🚀
