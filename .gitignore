@@ -49,3 +49,8 @@ testem.log
 Thumbs.db
 
 *storybook.log
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/

@@ -25,7 +25,10 @@
               "src/polyfills.ts"
             ],
             "tsConfig": "tsconfig.app.json",
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
@@ -87,7 +90,10 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         },
         "storybook": {
@@ -96,7 +102,12 @@
             "configDir": ".storybook",
             "browserTarget": "angular-starter:build",
             "compodoc": true,
-            "compodocArgs": ["-e", "json", "-d", "."],
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "."
+            ],
             "port": 6006
           }
         },
@@ -106,14 +117,32 @@
             "configDir": ".storybook",
             "browserTarget": "angular-starter:build",
             "compodoc": true,
-            "compodocArgs": ["-e", "json", "-d", "."],
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "."
+            ],
             "outputDir": "storybook-static"
+          }
+        },
+        "e2e": {
+          "builder": "playwright-ng-schematics:playwright",
+          "options": {
+            "devServerTarget": "angular-starter:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular-starter:serve:production"
+            }
           }
         }
       }
     }
   },
   "cli": {
-    "schematicCollections": ["@schematics/angular"]
+    "schematicCollections": [
+      "@schematics/angular"
+    ]
   }
 }
